@@ -1,0 +1,418 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: 
+        linear-gradient(135deg, rgba(210, 180, 140, 0.8) 0%, rgba(222, 184, 135, 0.8) 100%),
+        repeating-linear-gradient(
+            45deg,
+            rgba(210, 180, 140, 0.1) 0px,
+            rgba(210, 180, 140, 0.1) 1px,
+            transparent 1px,
+            transparent 10px
+        ),
+        repeating-linear-gradient(
+            -45deg,
+            rgba(222, 184, 135, 0.1) 0px,
+            rgba(222, 184, 135, 0.1) 1px,
+            transparent 1px,
+            transparent 10px
+        );
+    background-attachment: fixed;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        linear-gradient(90deg, 
+            rgba(255,255,255,0.1) 1px, 
+            transparent 1px
+        ) 0 0 / 20px 20px,
+        linear-gradient(0deg, 
+            rgba(255,255,255,0.1) 1px, 
+            transparent 1px
+        ) 0 0 / 20px 20px;
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* Header Styles */
+.header {
+    background-color: rgba(210, 180, 140, 0.95);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img {
+    height: 50px;
+    filter: brightness(0) invert(1);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.nav-links a:hover {
+    color: #FFD700;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-icons a {
+    color: #fff;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+/* Main Banner */
+.main-banner {
+    height: 100vh;
+    background: linear-gradient(rgba(210, 180, 140, 0.7), rgba(222, 184, 135, 0.7)), url('../images/banner.jpg') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    margin-top: 70px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.banner-content {
+    max-width: 800px;
+    padding: 2rem;
+}
+
+.banner-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.banner-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #D2B48C;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.btn:hover {
+    background-color: #DEB887;
+    transform: scale(1.05);
+}
+
+/* Featured Products */
+.featured-products {
+    padding: 5rem 5%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+    margin: 2rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.featured-products::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        linear-gradient(90deg, 
+            rgba(210, 180, 140, 0.1) 1px, 
+            transparent 1px
+        ) 0 0 / 20px 20px;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.featured-products h2 {
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Brand Story */
+.brand-story {
+    padding: 5rem 5%;
+    background-color: rgba(255, 255, 255, 0.85);
+    text-align: center;
+    border-radius: 10px;
+    margin: 2rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.brand-story::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        linear-gradient(90deg, 
+            rgba(210, 180, 140, 0.1) 1px, 
+            transparent 1px
+        ) 0 0 / 20px 20px;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.brand-story h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.story-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Latest News */
+.latest-news {
+    padding: 5rem 5%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+    margin: 2rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.latest-news::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        linear-gradient(90deg, 
+            rgba(210, 180, 140, 0.1) 1px, 
+            transparent 1px
+        ) 0 0 / 20px 20px;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.latest-news h2 {
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Footer */
+.footer {
+    background-color: rgba(210, 180, 140, 0.95);
+    color: #fff;
+    padding: 3rem 5% 1rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    position: relative;
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        linear-gradient(90deg, 
+            rgba(255,255,255,0.1) 1px, 
+            transparent 1px
+        ) 0 0 / 20px 20px;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section h3 {
+    margin-bottom: 1rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Product Card */
+.product-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.product-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        linear-gradient(45deg, 
+            rgba(210, 180, 140, 0.1) 1px, 
+            transparent 1px
+        ) 0 0 / 10px 10px;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+/* News Card */
+.news-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.news-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        linear-gradient(45deg, 
+            rgba(210, 180, 140, 0.1) 1px, 
+            transparent 1px
+        ) 0 0 / 10px 10px;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 1rem;
+        background-color: rgba(210, 180, 140, 0.95);
+    }
+
+    .nav-links {
+        margin: 1rem 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .banner-content h1 {
+        font-size: 2rem;
+    }
+
+    .banner-content p {
+        font-size: 1rem;
+    }
+
+    .featured-products,
+    .brand-story,
+    .latest-news {
+        margin: 1rem;
+        padding: 2rem;
+    }
+} 
