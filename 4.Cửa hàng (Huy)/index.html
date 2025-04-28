@@ -1,11 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hệ Thống Cửa Hàng - Phê La</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="" alt="HK Logo">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">TRANG CHỦ</a></li>
+                <li><a href="pages/products.html">CÂU CHUYỆN THƯƠNG HIỆU</a></li>
+                <li><a href="pages/news.html">TIN TỨC</a></li>
+                <li><a href="pages/stores.html">CỬA HÀNG</a></li>
+                <li><a href="pages/members.html">THÀNH VIÊN</a></li>
+                <li><a href="pages/contact.html">LIÊN HỆ</a></li>
+                <li><a href="pages/contact.html">CHUYÊN ĐẶC SẢN</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#" class="user-icon"><i class="fas fa-user"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Hệ Thống Cửa Hàng</h1>
+                <p>Khám phá không gian thưởng trà độc đáo tại các chi nhánh HK</p>
+            </div>
+        </section>
+
+        <!-- Store Locations -->
+        <section class="store-locations">
+            <div class="container">
+                <div class="stores-grid">
+                    <!-- Đà Lạt Store -->
+                    <div class="store-card">
+                        <div class="store-image">
+                            <img src="images/dalat-store.jpg.jpg" alt="Chi nhánh Đà Lạt">
+                        </div>
+                        <div class="store-info">
+                            <h3>Chi nhánh Đà Lạt</h3>
+                            <div class="store-details">
+                                <p><i class="fas fa-map-marker-alt"></i> Số 7 Nguyễn Chí Thanh, Thành phố Đà Lạt, Lâm Đồng</p>
+                                <p><i class="fas fa-phone"></i> 1900 8386</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Đà Nẵng Store -->
+                    <div class="store-card">
+                        <div class="store-image">
+                            <img src="images/danang-store.jpg.jpg" alt="Chi nhánh Đà Nẵng">
+                        </div>
+                        <div class="store-info">
+                            <h3>Chi nhánh Đà Nẵng</h3>
+                            <div class="store-details">
+                                <p><i class="fas fa-map-marker-alt"></i> Số 35 - 41 Nguyễn Văn Linh, Quận Hải Châu, Đà Nẵng</p>
+                                <p><i class="fas fa-phone"></i> 1900 8386</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Đồng Nai Store -->
+                    <div class="store-card">
+                        <div class="store-image">
+                            <img src="images/TPHCM-store.jpg.jpg" alt="Chi nhánh TPHCM">
+                        </div>
+                        <div class="store-info">
+                            <h3>Chi nhánh TP Hồ Chí Minh</h3>
+                            <div class="store-details">
+                                <p><i class="fas fa-map-marker-alt"></i> Số 288 Võ Thị Sáu, Khu phố 7, Thành phố Biên Hòa, Đồng Nai</p>
+                                <p><i class="fas fa-phone"></i> 1900 8386</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hà Nội Store -->
+                    <div class="store-card">
+                        <div class="store-image">
+                            <img src="images/hanoi-store.jpg.jpg" alt="Chi nhánh Hà Nội">
+                        </div>
+                        <div class="store-info">
+                            <h3>Chi nhánh Hà Nội</h3>
+                            <div class="store-details">
+                                <p><i class="fas fa-map-marker-alt"></i> Số 19 Lê Văn Lương (Toà nhà Sao Mai), Quận Thanh Xuân, Hà Nội</p>
+                                <p><i class="fas fa-phone"></i> 1900 8386</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Về Chúng tôi - HK</h3>
+                <p>Đánh thức những nốt hương đặc sản của nông sản Việt Nam</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liên hệ</h3>
+                <p>Email: cskh@.vn</p>
+                <p>Hotline: 1900 8386</p>
+            </div>
+            <div class="footer-section">
+                <h3>Theo dõi chúng tôi</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 cafeHK. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>

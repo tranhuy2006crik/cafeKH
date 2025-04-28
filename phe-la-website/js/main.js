@@ -4,21 +4,21 @@ const products = [
         id: 1,
         name: "Matcha Phan Xi Păng",
         price: "64.000₫",
-        image: "images/products/matcha-phan-xi-pang.jpg",
+        image: "images/matcha-fansipan.jpg",
         description: "Matcha từ Ô Long Đặc Sản Việt Nam"
     },
     {
         id: 2,
         name: "Matcha-Coco-Latte",
         price: "59.000₫",
-        image: "images/products/matcha-coco-latte.jpg",
+        image: "images/matcha-cocoLatte.jpg",
         description: "Matcha Coco Latte thơm ngon"
     },
     {
         id: 3,
         name: "Thạch Ô Long Matcha",
         price: "15.000₫",
-        image: "images/products/thach-o-long-matcha.jpg",
+        image: "images/thachOlongMatcha.jpg",
         description: "Thạch Ô Long Matcha đặc biệt"
     }
 ];
@@ -27,16 +27,16 @@ const products = [
 const news = [
     {
         id: 1,
-        title: "Ô Long Matcha – Matcha từ Ô Long Đặc Sản Việt Nam",
-        date: "25/04/2024",
-        image: "images/news/o-long-matcha.jpg",
+        title: "Lụa Gạo – Ô Long Gạo Sữa Tươi 🎶",
+        date: "29/04/2024",
+        image: "images/gaoSuaTuoi.jpg",
         excerpt: "Đánh thức những Nốt Hương Đặc Sản ẩn sâu trong nông sản Việt Nam..."
     },
     {
         id: 2,
         title: "LY GẠO LÀNG CHILL 🎶🌾",
-        date: "24/04/2024",
-        image: "images/news/ly-gao-lang-chill.jpg",
+        date: "29/04/2024",
+        image: "images/lyGaoLangChill.jpg",
         excerpt: "Góp nhặt tinh hoa đất trời, hạt gạo tuy nhỏ bé nhưng nuôi dưỡng bao thế hệ..."
     }
 ];
