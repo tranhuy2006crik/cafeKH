@@ -6,6 +6,11 @@
     <title>Phê La - Trà Ô Long Đặc Sản</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
 </head>
 <body>
     <!-- Header -->
@@ -13,20 +18,20 @@
         <nav class="navbar">
             <div class="logo">
                 <a href="index.html">
-                    <img src="" alt="HK Logo">
+                    <img src="index.html" alt="HK Logo">
                 </a>
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">TRANG CHỦ</a></li>
-                <li><a href="http://127.0.0.1:5500/2.C%C3%A2u%20chuy%E1%BB%87n%20th%C6%B0%C6%A1ng%20hi%E1%BB%87u%20(Huy)/index.html">CÂU CHUYỆN THƯƠNG HIỆU</a></li>
-                <li><a href="">TIN TỨC</a></li>
-                <li><a href="http://127.0.0.1:5500/4.C%E1%BB%ADa%20h%C3%A0ng%20(Huy)/index.html">CỬA HÀNG</a></li>
-                <li><a href="">THÀNH VIÊN</a></li>
-                <li><a href="">LIÊN HỆ</a></li>
-                <li><a href="">CHUYÊN ĐẶC SẢN</a></li>
+                <li><a href="/2.Câu chuyện thương hiệu (Huy)/index.html">CÂU CHUYỆN THƯƠNG HIỆU</a></li>
+                <li><a href="/3.Tin tức (Khánh)/index.html">TIN TỨC</a></li>
+                <li><a href="/4.Cửa hàng (Huy)/index.html">CỬA HÀNG</a></li>
+                <li><a href="/5.Thành viên (Huy)/index.html">THÀNH VIÊN</a></li>
+                <li><a href="/6.Liên hệ (Khánh)/index.html">LIÊN HỆ</a></li>
+                <li><a href="/shopping/index.html">SẢN PHẨM</a></li>
             </ul>
             <div class="nav-icons">
-                <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+                <a href="shopping" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
                 <a href="form-register" class="user-icon"><i class="fas fa-user"></i></a>
             </div>
         </nav>
@@ -54,7 +59,7 @@
         <h2>Câu chuyện thương hiệu</h2>
         <div class="story-content">
             <p>Thương hiệu của chúng tôi luôn trân quý, nâng niu những giá trị Nguyên Bản ở mỗi vùng đất mà chúng tôi đi qua. Chúng tôi mang đến không gian thưởng thức độc đáo với phong cách cắm trại đặc trưng.</p>
-            <a href="pages/brand-story.html" class="btn">Xem thêm</a>
+            <a href="/2.Câu chuyện thương hiệu (Huy)/index.html" class="btn">Xem thêm</a>
         </div>
     </section>
 
@@ -63,6 +68,32 @@
         <h2>Tin tức mới nhất</h2>
         <div class="news-grid">
             <!-- News items will be added dynamically via JavaScript -->
+        </div>
+    </section>
+
+    <!-- Image Slider -->
+    <section class="image-slider">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="images/slider/hanoi-store.jpg.jpg" alt="Slide 1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/slider/danang-store.jpg.jpg" alt="Slide 2">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/slider/dalat-store.jpg.jpg" alt="Slide 3">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/slider/TPHCM-store.jpg.jpg" alt="Slide 4">
+                </div>
+            </div>
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
     </section>
 
@@ -93,5 +124,6 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
 </body>
 </html>

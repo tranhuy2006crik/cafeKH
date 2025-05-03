@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh Toán - HK</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/logo.png" alt="HK Logo">
+                </a>
+            </div>
+            <div class="nav-title">
+                <h1>Thanh Toán</h1>
+            </div>
+        </nav>
+    </header>
+
+    <main class="checkout-page">
+        <div class="container">
+            <!-- Địa chỉ giao hàng -->
+            <section class="delivery-address">
+                <h2><i class="fas fa-map-marker-alt"></i> Địa Chỉ Nhận Hàng</h2>
+                <div class="address-content">
+                    <div class="user-info">
+                        <span class="name">Nguyễn Văn A</span>
+                        <span class="phone">(+84) 123456789</span>
+                    </div>
+                    <div class="address">
+                        123 Đường ABC, Phường XYZ, Quận 1, TP.HCM
+                    </div>
+                    <button class="change-address-btn">Thay đổi</button>
+                </div>
+            </section>
+
+            <!-- Sản phẩm đặt hàng -->
+            <section class="order-products">
+                <h2><i class="fas fa-shopping-basket"></i> Sản Phẩm Đặt Hàng</h2>
+                <div class="products-list">
+                    <!-- Sản phẩm sẽ được thêm động bằng JavaScript -->
+                </div>
+            </section>
+
+            <!-- Phương thức thanh toán -->
+            <section class="payment-method">
+                <h2><i class="fas fa-wallet"></i> Phương Thức Thanh Toán</h2>
+                <div class="payment-options">
+                    <label class="payment-option">
+                        <input type="radio" name="payment" value="cod" checked>
+                        <span class="radio-custom"></span>
+                        <i class="fas fa-money-bill-wave"></i>
+                        Thanh toán khi nhận hàng
+                    </label>
+                    <label class="payment-option">
+                        <input type="radio" name="payment" value="bank">
+                        <span class="radio-custom"></span>
+                        <i class="fas fa-university"></i>
+                        Chuyển khoản ngân hàng
+                    </label>
+                    <label class="payment-option">
+                        <input type="radio" name="payment" value="momo">
+                        <span class="radio-custom"></span>
+                        <i class="fas fa-mobile-alt"></i>
+                        Ví MoMo
+                    </label>
+                </div>
+            </section>
+
+            <!-- Tổng thanh toán -->
+            <section class="order-summary">
+                <div class="summary-row">
+                    <span>Tổng tiền hàng:</span>
+                    <span class="subtotal">0₫</span>
+                </div>
+                <div class="summary-row">
+                    <span>Phí vận chuyển:</span>
+                    <span class="shipping-fee">30.000₫</span>
+                </div>
+                <div class="summary-row total">
+                    <span>Tổng thanh toán:</span>
+                    <span class="total-amount">0₫</span>
+                </div>
+                <button class="place-order-btn">Đặt Hàng</button>
+            </section>
+        </div>
+    </main>
+
+    <script src="js/checkout.js"></script>
+</body>
+</html>

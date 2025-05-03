@@ -199,3 +199,39 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style); 
+
+// Khởi tạo Swiper
+document.addEventListener('DOMContentLoaded', function() {
+    const swiper = new Swiper('.swiper', {
+        // Các tùy chọn cơ bản
+        loop: true, // Lặp lại slide
+        autoplay: {
+            delay: 3000, // Tự động chuyển slide sau 3 giây
+            disableOnInteraction: false, // Tiếp tục tự động chuyển sau khi người dùng tương tác
+        },
+        
+        // Cấu hình điều hướng
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        
+        // Cấu hình chấm pagination
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true, // Cho phép click vào chấm để chuyển slide
+        },
+        
+        // Cấu hình responsive
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 20
+            },
+            768: {
+                slidesPerView: 1,
+                spaceBetween: 30
+            }
+        }
+    });
+});

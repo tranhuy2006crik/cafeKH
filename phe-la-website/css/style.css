@@ -33,7 +33,6 @@ body {
     width: 100%;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 .navbar {
@@ -41,8 +40,6 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 5%;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 .logo img {
@@ -52,9 +49,7 @@ body {
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 1.5rem;
-    align-items: center;
-    white-space: nowrap;
+    gap: 2rem;
 }
 
 .nav-links a {
@@ -62,14 +57,16 @@ body {
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s;
-    font-size: 0.9rem;
-    padding: 0.5rem 0.8rem;
-    border-radius: 4px;
 }
 
 .nav-links a:hover {
     color: var(--accent-color);
-    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-icons a {
+    color: var(--light-color);
+    margin-left: 1rem;
+    font-size: 1.2rem;
 }
 
 /* Responsive adjustments */
@@ -108,7 +105,7 @@ body {
     justify-content: center;
     text-align: center;
     color: var(--light-color);
-    margin-top: 70px;
+    padding-top: 70px; /* Thay margin-top bằng padding-top */
 }
 
 .banner-content {
@@ -378,3 +375,77 @@ section h2 {
         grid-template-columns: 1fr;
     }
 }
+
+/* Swiper Styles */
+.image-slider {
+    padding: 40px 0;
+    background-color: var(--background-color);
+}
+
+.swiper {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.swiper-slide {
+    text-align: center;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.swiper-slide:hover img {
+    transform: scale(1.05);
+}
+
+/* Nút điều hướng */
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--primary-color);
+    width: 35px;
+    height: 35px;
+    background: none; /* Loại bỏ background màu trắng */
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Chấm pagination */
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background-color: var(--primary-color);
+    opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .swiper {
+        width: 95%;
+    }
+    
+    .swiper-slide img {
+        height: 250px;
+    }
+}
+    
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
