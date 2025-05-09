@@ -21,86 +21,97 @@ body {
     justify-content: center;
 }
 
+/* Style cho trang login */
 .container {
-    width: 100%;
-    max-width: 400px;
-    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
 }
 
 .form-container {
-    background: white;
-    padding: 30px;
+    background-color: #fff;
+    padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
 }
 
-h2 {
+.form-container h2 {
+    color: #8B4513;
     text-align: center;
-    color: var(--text-color);
-    margin-bottom: 30px;
+    margin-bottom: 2rem;
+    font-size: 2rem;
 }
 
 .form-group {
     position: relative;
-    margin-bottom: 25px;
+    margin-bottom: 1.5rem;
 }
 
-input {
+.form-group input {
     width: 100%;
-    padding: 10px 0;
-    font-size: 16px;
-    border: none;
-    border-bottom: 2px solid #ddd;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #8B4513;
     outline: none;
-    background: transparent;
-    transition: 0.3s;
 }
 
-label {
+.form-group label {
     position: absolute;
-    top: 10px;
-    left: 0;
-    font-size: 16px;
-    color: #999;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+    transition: all 0.3s ease;
     pointer-events: none;
-    transition: 0.3s;
+    font-size: 1rem;
 }
 
-input:focus ~ label,
-input:valid ~ label {
-    top: -20px;
-    font-size: 14px;
-    color: var(--primary-color);
-}
-
-input:focus {
-    border-bottom: 2px solid var(--primary-color);
+.form-group input:focus + label,
+.form-group input:valid + label {
+    top: -10px;
+    left: 5px;
+    font-size: 0.8rem;
+    color: #8B4513;
+    background-color: #fff;
+    padding: 0 5px;
 }
 
 .btn {
     width: 100%;
     padding: 12px;
-    background: var(--primary-color);
+    background-color: #8B4513;
     color: white;
     border: none;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 1rem;
     cursor: pointer;
-    transition: 0.3s;
+    transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-    background: var(--secondary-color);
+    background-color: #6b3410;
 }
 
 .switch-form {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 1rem;
+    color: #666;
 }
 
 .switch-form a {
-    color: var(--primary-color);
+    color: #8B4513;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .switch-form a:hover {

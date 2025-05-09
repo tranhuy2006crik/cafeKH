@@ -15,7 +15,7 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
         localStorage.setItem('currentUser', JSON.stringify(user));
         alert('Đăng nhập thành công!');
         // Chuyển hướng đến trang chính
-        window.location.href = 'index.html';
+        window.location.href = '/phe-la-website/index.html';
     } else {
         alert('Email hoặc mật khẩu không chính xác!');
     }

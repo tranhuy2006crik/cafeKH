@@ -196,6 +196,11 @@ style.textContent = `
             font-size: 1.5rem;
             cursor: pointer;
         }
+
+        /* Loại bỏ pseudo-element ::before cho icon bars */
+        .mobile-menu-button i.fas.fa-bars::before {
+            content: none;
+        }
     }
 `;
 document.head.appendChild(style); 
