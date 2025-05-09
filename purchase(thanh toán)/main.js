@@ -64,7 +64,7 @@ document.querySelector('.place-order-btn').addEventListener('click', function() 
     localStorage.removeItem('cartItems');
     
     // Chuyển về trang chủ
-    window.location.href = '../index.html';
+    window.location.href = '/1.sản phẩm (Khánh)/index.html';
 });
 
 // Khởi tạo hiển thị khi trang được load
